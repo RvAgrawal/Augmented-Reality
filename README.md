@@ -67,6 +67,5 @@ x – for rotating the node counterclockwise around the X-axis of its local coor
 y – for rotating the node counterclockwise around the Y-axis of its local coordinate space (measured in radians)
 z – for rotating the node counterclockwise around the Z-axis of its local coordinate space (measured in radians)
 duration – The duration of the animation (in seconds)
-http://wiki.promact.com/link/57#bkmrk-to-put-the-buttons-a
   
 To put the buttons and long-press gesture please check the code. Also if it is set up completely you can check all the actions.
