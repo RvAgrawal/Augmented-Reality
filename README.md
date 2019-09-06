@@ -10,17 +10,17 @@ Steps to integrate ARKit in your iOS application :
 5. Displaying a 3D Object in the scene
 6. Setting up Control buttons
 
-Step 1: Creating a Project
+# Step 1: Creating a Project
 Create an empty project by selecting a single view Application.
  
-Step 2: Adding ARKit SceneKit View to your storyboard controller
+# Step 2: Adding ARKit SceneKit View to your storyboard controller
 1. You need to add ARKit SceneKit View to your Storyboard. ARSCNView is used for displaying virtual 3D content on a camera background. Don’t forget to adjust the constraints so that ARSCNView works on the full screen of the device.
 
 2. Create an IBOutlet in the ViewController.
 
 3. This will show an error, So you need to add ARKit Framework to your project and import it to the view controller
 
-Step 3: Enabling the Camera
+# Step 3: Enabling the Camera
  To enable rendering, ARKit needs to use an iOS device’s sensors (camera, accelerometer, and gyroscope).
 1. AR mobile application needs to use the camera. To allow it to do so, set up the scene in the viewDidLoad method and run the session in the viewWillAppear method.
 
@@ -28,7 +28,7 @@ Step 3: Enabling the Camera
 
 3. To check that you’ve done everything right, run your AR app; if you see the camera working, then you’re on the right track.
 
-Step 4: Adding a 3D Object
+# Step 4: Adding a 3D Object
 You can pick any virtual object you want, but let’s check what file formats are supported by ARKit.
 1. ARKit SceneKit View supports several file formats, namely .dae (digital asset exchange), .abc (alembic), and .scn (SceneKit archive). When .dae or .abc files are added to an Xcode project, however, the editor automatically converts them to SceneKit’s compressed files that retain the same extensions. To serialize a SCNScene object, create a .scn file by converting the initial .dae or .abc file.
 
@@ -38,7 +38,7 @@ As you can see, both .dae and .scn files are present in the Objects folder.
 
  
 
-Step 5: Displaying a 3D Object in the Scene
+# Step 5: Displaying a 3D Object in the Scene
 1. The object has already been added to our project, now we need to add the object to the SCNScene.
 
 2. Since we’re using SceneKit, a 3D object model must be a subclass of SCNNode, so we need to create a new class (we’ve called it Drone, though you may call it whatever you like) and load the initial file containing the object (in our case, Drone.scn). Here’s the code we used to add the quadcopter to the scene.
@@ -50,7 +50,7 @@ Step 5: Displaying a 3D Object in the Scene
 
  
  
-Step 6: Setting up Control buttons (To Rotate and To Move)
+# Step 6: Setting up Control buttons (To Rotate and To Move)
 The application seems to be working and the quadcopter is displayed in the scene, but there’s still one major thing to do. So far, the quadcopter is a motionless AR object that looks nice but doesn’t move. It’s time to add controls.
 
 We will place 2 controls in the bottom, One set of controls is responsible for moving the quadcopter up and down and left and right, while the other rotates it and moves the quadcopter forward and backward. To set up the controls, you need to use SCNAction and two methods.
