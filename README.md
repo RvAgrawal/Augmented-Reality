@@ -10,6 +10,8 @@ Steps to integrate ARKit in your iOS application :
 5. Displaying a 3D Object in the scene
 6. Setting up Control buttons
 
+[Video](https://github.com/RvAgrawal/Augmented-Reality/blob/master/AR.mp4)
+
 # Step 1: Creating a Project
 Create an empty project by selecting a single view Application.
  
